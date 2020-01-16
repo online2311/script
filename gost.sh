@@ -5,7 +5,7 @@
 METHOD="-C /etc/gost.json"
 
 VER="$(wget -qO- https://github.com/ginuerzh/gost/tags | grep -oE "/tag/v.*" | sed -n '1p' | sed 's/\".*//;s/^.*v//')"
-VER=${VER:=2.9.0}
+VER=${VER:=2.9.1}
 URL="https://github.com/ginuerzh/gost/releases/download/v${VER}/gost-linux-amd64-${VER}.gz"
 
 echo "Downloading gost_${VER} to /usr/bin/gost from $URL"
