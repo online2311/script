@@ -32,8 +32,7 @@ cat <<EOF > /etc//gost.json
     "Retries": 1,
     "Debug": false,
     "ServeNodes": [
-        "socks5+h2://nodecloud:123456@:443",
-        "socks5+ohttp://nodecloud:123456@:80"
+        "socks5+mws://nodecloud:123456@:80"
     ]
 }
 EOF
