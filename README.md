@@ -2,4 +2,4 @@
 
 
 #### GOST PROXY 
-`curl https://raw.githubusercontent.com/mixool/script/master/gost.sh | bash`   
+`curl https://raw.githubusercontent.com/online2311/script/master/gost.sh | bash`   
