@@ -5,7 +5,7 @@
 METHOD="-C /etc/gost.json"
 
 VER="$(wget -qO- https://github.com/ginuerzh/gost/tags | grep -oE "/tag/v.*" | sed -n '1p' | sed 's/\".*//;s/^.*v//')"
-VER=${VER:=2.10.1}
+VER=${VER:=2.11.0}
 URL="https://github.com/ginuerzh/gost/releases/download/v${VER}/gost-linux-amd64-${VER}.gz"
 
 echo "Downloading gost_${VER} to /usr/bin/gost from $URL"
@@ -32,7 +32,8 @@ cat <<EOF > /etc//gost.json
     "Retries": 1,
     "Debug": false,
     "ServeNodes": [
-        "socks5+mws://nodecloud:123456@:80"
+        "relay+ws://nodecloud:123456@:80",
+        "relay+wss://nodecloud:123456@:443"
     ]
 }
 EOF
