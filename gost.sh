@@ -33,7 +33,8 @@ cat <<EOF > /etc//gost.json
     "Debug": false,
     "ServeNodes": [
         "relay+ws://nodecloud:123456@:80",
-        "relay+wss://nodecloud:123456@:443"
+        "relay+wss://nodecloud:123456@:443",
+        "relay+quic://nodecloud:123456@:443"
     ]
 }
 EOF
